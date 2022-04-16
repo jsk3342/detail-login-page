@@ -3,139 +3,263 @@
 
 /* 탈부착 클래스 */
 .hide {
-    display: none;
+  display: none;
 }
 
 /* 로그인창 구현 */
-* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+* {
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
 
 body {
-    background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .login-container {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    text-align: center;
-    background-color: #fff;
-    box-sizing: border-box;
-    border: 1px solid #c4c4c4;
-    border-radius: 5px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
 }
 
 .container .logo-img {
-    width: 138px;
-    height: 40px;
-    margin: 30px 0 36px;
+  width: 138px;
+  height: 40px;
+  margin: 30px 0 36px;
 }
 
 .login-btu {
-    width: 440px;
-    margin: 32px 0 30px;
-    padding: 17px 0 15px;
-    color: white;
-    font-size: 22px;   
-    line-height: 28px;
-    background: #2F80ED;
-    border: none;
-    border-radius: 5px;  
-    cursor: pointer;
+  width: 440px;
+  margin: 32px 0 30px;
+  padding: 17px 0 15px;
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+  background: #2f80ed;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .login-btu:hover {
-    background-color: #206bce;
+  background-color: #206bce;
 }
 
 /* 모달창 구현 */
 .modal-container {
-    background-color: white;
-    width: 520px;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid #C4C4C4;
-    box-sizing: border-box;
-    border-radius: 10px;
-
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 520px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .modal-container .modal-title {
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 20px 0 17px;
-    border-bottom: 1px solid #c4c4c4;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 20px 0 17px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .modal-close-img {
-    width: 16px;
-    height: 16px;
-    float: right;
-    margin-right: 24px;
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin-right: 24px;
 }
 
 .modal-sub-title {
-    text-align: initial;
-    padding: 26px 0 24px 24px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
+  text-align: initial;
+  padding: 26px 0 24px 24px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 input[class^="modal-input"] {
-    display: block;
-    margin-left: 24px;
-    width: 472px;
-    height: 50px;
-    border: 1px solid #C4C4C4;
-box-sizing: border-box;
-border-radius: 5px;
-    
+  display: block;
+  margin-left: 24px;
+  width: 472px;
+  height: 50px;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+input[class^="modal-input"]::placeholder {
+  padding-left: 16px;
 }
 
 .modal-input-id {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-input-pw {
 }
 
 .modal-check-box-img {
-    width: 22px;
-    height: 22px;
-    float: left;
-    padding-right: 8px;
+  width: 22px;
+  height: 22px;
+  float: left;
+  padding-right: 8px;
 }
 /* 로그인 상태 유지 글씨 눌러도 체크 되게 만들기 */
 
 .modal-login-status {
-    text-align: initial;
-    padding: 17px 0 21px 28px;
-    color: #767676;
-    line-height: 20px;
+  text-align: initial;
+  padding: 17px 0 21px 28px;
+  color: #767676;
+  line-height: 20px;
 }
 
 .modal-login-btu {
-    width: 472px;
-    padding: 14px 0;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    color: white;
-    cursor: pointer;
-    background: #2F80ED;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
+  width: 472px;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: white;
+  cursor: pointer;
+  background: #2f80ed;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .modal-login-btu:hover {
-    background-color: #206bce;
+  background-color: #206bce;
 }
 
 .modal-nav {
-    font-size: 14px;
-    color: #767676;
-    line-height: 18px;
+  font-size: 14px;
+  color: #767676;
+  line-height: 18px;
+  overflow: hidden;
+}
+
+.modal-nav a:first-child {
+  position: relative;
+}
+
+.modal-nav a:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin: 0px 12px 0 9px;
+  background-color: #767676;
+}
+
+.modal-footer-title {
+  margin: 30px 0 20px;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #767676;
+  position: relative;
+}
+
+.modal-footer-title::before {
+  content: "";
+  width: 210px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 24px;
+  background-color: #767676;
+}
+
+.modal-footer-title::after {
+  content: "";
+  width: 210px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  background-color: #767676;
+}
+
+.modal-list {
+  margin: 10px auto;
+  width: 472px;
+  padding: 15px 0;
+  color: #767676;
+  line-height: 100%;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #767676;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+}
+
+.modal-list:hover {
+  background-color: #ececec;
+}
+
+.modal-list:nth-of-type(1)::before {
+  content: "";
+  background-image: url(images/Google__G__Logo\ 1.png);
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+.modal-list:nth-of-type(2) {
+  border-color: #2d9cdb;
+}
+
+.modal-list:nth-of-type(2)::before {
+  content: "";
+  background-image: url(images/facebook.png);
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+.modal-list:nth-of-type(3) {
+  border-color: #00bf18;
+}
+
+.modal-list:nth-of-type(3)::before {
+  content: "";
+  background-image: url(images/naver-logo.png);
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+.modal-list:last-child {
+  margin-bottom: 25px;
+  border-color: #f2c94c;
+}
+.modal-list:last-child::before {
+  content: "";
+  background-image: url(images/message-circle.png);
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
 }
