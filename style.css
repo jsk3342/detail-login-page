@@ -2,7 +2,7 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 /* 탈부착 클래스 */
-.hide {
+.hidden {
   display: none;
 }
 
@@ -28,7 +28,7 @@ body {
   border-radius: 5px;
 }
 
-.container .logo-img {
+.logo-img {
   width: 138px;
   height: 40px;
   margin: 30px 0 36px;
@@ -70,13 +70,34 @@ body {
   font-weight: 500;
   padding: 20px 0 17px;
   border-bottom: 1px solid #c4c4c4;
+  position: relative;
 }
 
-.modal-close-img {
+.modal-close-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  float: right;
+  bottom: 10px;
+  right: 14px;
+  border: none;
+}
+.modal-close-icon:hover {
+  background-color: rgb(206, 205, 205);
+}
+
+.modal-close-icon::after {
+  content: "";
   width: 16px;
   height: 16px;
-  float: right;
-  margin-right: 24px;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  cursor: pointer;
+  display: block;
+  background-image: url(images/close.png);
 }
 
 .modal-sub-title {
@@ -105,14 +126,12 @@ input[class^="modal-input"]::placeholder {
   margin-bottom: 10px;
 }
 
-.modal-input-pw {
-}
-
 .modal-check-box-img {
   width: 22px;
   height: 22px;
   float: left;
   padding-right: 8px;
+  cursor: pointer;
 }
 /* 로그인 상태 유지 글씨 눌러도 체크 되게 만들기 */
 
@@ -146,6 +165,14 @@ input[class^="modal-input"]::placeholder {
   color: #767676;
   line-height: 18px;
   overflow: hidden;
+}
+
+.modal-nav a span {
+  cursor: pointer;
+}
+
+.modal-nav a:last-child {
+  cursor: pointer;
 }
 
 .modal-nav a:first-child {
@@ -263,3 +290,4 @@ input[class^="modal-input"]::placeholder {
   top: 8px;
   left: 12px;
 }
+
