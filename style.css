@@ -119,7 +119,7 @@ input[class^="modal-input"]:hover {
 }
 
 input[class^="modal-input"]::placeholder {
-  padding-left: 16px;
+  padding-left: 8px;
 }
 
 .modal-input-id {
@@ -194,6 +194,7 @@ input[class^="modal-input"]::placeholder {
   line-height: 17.53px;
   color: #767676;
   position: relative;
+
 }
 
 .modal-footer-title::before {
@@ -202,7 +203,7 @@ input[class^="modal-input"]::placeholder {
   height: 1px;
   display: block;
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: 24px;
   background-color: #767676;
 }
@@ -213,10 +214,11 @@ input[class^="modal-input"]::placeholder {
   height: 1px;
   display: block;
   position: absolute;
-  top: 10px;
+  top: 9px;
   right: 24px;
   background-color: #767676;
 }
+
 
 .modal-list {
   margin: 10px auto;
@@ -321,6 +323,7 @@ input[class^="modal-input"]::placeholder {
   transition: all 0.5s;
   opacity: 1;
   visibility: 1;
+  transition: all 0.5s;
 }
 
 .black-background {
@@ -336,4 +339,5 @@ input[class^="modal-input"]::placeholder {
 .show-modal {
   opacity: 1;
   visibility: visible;
+  transition: all 0.5s;
 }
