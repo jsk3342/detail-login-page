@@ -4,6 +4,9 @@
 
 https://jsk3342.github.io/detail-login-page/
 
+![detail](https://user-images.githubusercontent.com/85912592/163736761-58f23854-ba93-4076-8e37-bf2aa085dd2b.gif)
+
+
 ## 목표
 
 피그마 디자인을 통해 페이지를 완성하고 자바스크립트를 활용하여 모달창 구현을 목표로 진행하였습니다.
