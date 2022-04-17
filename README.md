@@ -4,8 +4,7 @@
 
 https://jsk3342.github.io/detail-login-page/
 
-![detail](https://user-images.githubusercontent.com/85912592/163736761-58f23854-ba93-4076-8e37-bf2aa085dd2b.gif)
-
+![detail](https://user-images.githubusercontent.com/85912592/163736786-ba180cfe-3415-4329-97d7-b02c3ac56e4d.gif)
 
 ## 목표
 
