@@ -2,13 +2,13 @@ let emptyCheck = document.getElementById("empty_check");
 let fullCheck = document.getElementById("full_check");
 
 emptyCheck.addEventListener("click", function () {
-  emptyCheck.classList.add("hidden");
-  fullCheck.classList.remove("hidden");
+  emptyCheck.classList.toggle("hidden");
+  fullCheck.classList.toggle("hidden");
 });
 
 fullCheck.addEventListener("click", function () {
-  emptyCheck.classList.remove("hidden");
-  fullCheck.classList.add("hidden");
+  emptyCheck.classList.toggle("hidden");
+  fullCheck.classList.toggle("hidden");
 });
 
 let loginBtu = document.querySelector(".login-btu");
@@ -35,3 +35,7 @@ closeIcon.addEventListener("click", function () {
   blackBackground.classList.remove("show-modal");
   loginContainer.classList.remove("hidden");
 });
+
+/* 인풋 공백 정규식 */
+
+
