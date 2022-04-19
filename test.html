@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .labl-hold {
+        display: block;
+        height: 22px;
+        margin: 17px 0 21px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #767676;
+        cursor: pointer;
+      }
+      .labl-hold::before {
+        display: inline-block;
+        content: "";
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        vertical-align: -5px;
+        background-image: url("images_login/icon_check_empty.png");
+      }
+
+      .inp-hold:focus + .labl-hold::before {
+        outline: 2px solid #000;
+        outline-offset: 5px;
+      }
+
+      .inp-hold:checked + .labl-hold::before {
+        background-image: url("images_login/icon_check.png");
+      }
+    </style>
+  </head>
+  <body>
+    <!-- txt-hide 클래스로 요소를 숨겨줍니다. -->
+    <input type="checkbox" id="inpHold" class="inp-hold txt-hide" />
+    <label for="inpHold" class="labl-hold">로그인 상태 유지</label>
+    <h2>셀렉트 박스 만들기</h2>
+    <button class="btn-select">당신의 에스파 최애 맴버는??</button>
+    <ul class="list-member">
+      <li><button type="button">카리나</button></li>
+      <li><button type="button">지젤</button></li>
+      <li><button type="button">닝닝</button></li>
+      <li><button type="button">윈터</button></li>
+    </ul>
+
+    <script>
+      const btn = document.querySelector(".btn-select");
+      const list = document.querySelector(".list-member");
+      btn.addEventListener("click", () => {
+        list.classList.toggle("on");
+      });
+      list.addEventListener("click", event => {
+        if (event.target.nodeName === "BUTTON") {
+          btn.innerText = event.target.innerText;
+          list.classList.remove("on");
+        }
+      });
+    </script>
+  </body>
+</html>
